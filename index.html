@@ -51,10 +51,120 @@
         </div>
     </div>
 
+    <!-- About -->
+
+    <div id="about">
+        <div class="container">
+            <div class="about__inner">
+                <div class="about__photo">
+                    <img src="https://via.placeholder.com" alt="">
+                </div>
+                <div class="about__content">
+                    <h2 class="about__title">About me</h2>
+                    <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, perspiciatis cupiditate. Deleniti blanditiis consectetur nobis molestias aliquid voluptatum tenetur, voluptas labore rem nesciunt repudiandae cum dolor eius dolorum, deserunt nihil.</p>
+
+                    <div class="tabs">
+                        <p class="tab__link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab__link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab__link" onclick="opentab('education')">Education</p>
+                        <p class="tab__link" onclick="opentab('hobbys')">Hobbys</p>
+                    </div>
+                    <!-- skills -->
+                    <div class="tab__content active-tab" id="skills">
+                        <h3 class="tab__content__title">Basic knowledge of:</h3>
+                        <ul class="tab__content__list">
+                            <li class="tab__content__item">HTML</li>
+                            <li class="tab__content__item">CSS</li>
+                            <li class="tab__content__item">JavaScript</li>
+                            <li class="tab__content__item">Git</li>
+                            <li class="tab__content__item">Linux</li>
+                        </ul>
+
+                        <h3 class="tab__content__title">Languages:</h3>
+                        <ul class="tab__content__list">
+                            <li class="tab__content__item">Russian (Mother tongue)</li>
+                            <li class="tab__content__item">German (B2)</li>
+                            <li class="tab__content__item">English (B2)</li>
+                        </ul>
+
+                    </div>
+                    <!-- Experience -->
+
+                    <div class="tab__content" id="experience">
+                        <p class="tab__content__suptitle">I haven't got any experience as frontend developer yet, but you can check my projects on my <a href="https://github.com/EugenPriymak/" target="_blank" >GitHub</a></p>
+                        <h3 class="tab__content__title">Irrelevant experience</h3>
+                        <ul class="tab__content__list">
+
+                            <li class="tab__content__item"><span>04/2016 – 10/2017</span><p class="tab__content__item-text">Print operator at PAO ONHP (Omsk Oil Chemistry Project), Russia</p></li>
+
+                            <li class="tab__content__item"><span>04/2014 – 03/2016</span><p class="tab__content__item-text">Kitchen and stock worker at Burger King, Russia</p></li>
+
+                            <li class="tab__content__item"><span>09/2013 – 01/2014</span><p class="tab__content__item-text">Printing house worker at advertising agency Companion, Russia  </p></li>
+
+                            <li class="tab__content__item"><span>06/2011 – 08/2011 </span><p class="tab__content__item-text">Cutting machine operator at metalworking shop, Russia</p></li>
+                          
+                        </ul>
+
+                        
+                    </div>
+                    <!-- Education -->
+
+                    <div class="tab__content" id="education">
+                        <ul class="tab__content__list">
+                            <li class="tab__content__item"><span>09/2021 – current</span><p class="tab__content__item-text">Computer Specialists for Applications Development, Comhard GmbH, Germany</p></li>
+
+                            <li class="tab__content__item"><span>01/2018 – 04/2021</span><p class="tab__content__item-text"></p>German and English language courses, Germany</li>
+
+                            <li class="tab__content__item"><span>08/2011 – 07/2015</span><p class="tab__content__item-text">Bachelor of Engineering in Printing Technology, Omsk State Technical University</p></li>
+
+                            <li class="tab__content__item"><span>09/2000 – 06/2011</span><p class="tab__content__item-text">Lyceum N. 74, Russia</p></li>
+                        </ul>
+
+                    </div>
+                    <!-- Hobbys -->
+
+                    <div class="tab__content" id="hobbys">
+                        <h3 class="tab__content__title">Music:</h3>
+                        <ul class="tab__content__list">
+                            <li class="tab__content__item">Making 90's electronic music </li>
+                            <li class="tab__content__item">Record collecting</li>
+                            <li class="tab__content__item">Learning guitar</li>
+                        </ul>
+
+                        <h3 class="tab__content__title">Sport:</h3>
+                        <ul class="tab__content__list">
+                            <li class="tab__content__item">Chess</li>
+                            <li class="tab__content__item">Fitness</li>
+                            <li class="tab__content__item">Basketball</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
 
+
+<script>
+
+    let tablinks = document.querySelectorAll('.tab__link');
+    let tabcontents = document.querySelectorAll('.tab__content');
+
+    function opentab(tabname) {
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+</script>
 
 </body>
 </html>

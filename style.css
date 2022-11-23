@@ -90,10 +90,7 @@ body {
 }
 
 .intro__content {
-    /* display: flex;
-    flex-direction: column; */
     width: 50%;
-    /* margin: auto 0; */
 }
 
 .intro__subtitle{
@@ -141,7 +138,6 @@ body {
 }
 
 .btn {
-    /* margin-top: 50px; */
     display: inline-block;
     vertical-align: top;
     font-size: 20px;
@@ -172,33 +168,101 @@ body {
     right: 0;
     z-index: 1;
 }
-/* 
-.intro__content p {
-
-}
-
-.header__text {
-    margin-top: 20%;
-    font-size: 30px;
-    position: relative;
-    height: 100vh;
-
-}
-
-.header__text h1 {
-    font-size: 60px;
-    margin-bottom: 20px;
-}
-
-.header__text h1 span {
-    color: #c76000;
-}
-
-.header__text-img {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 1050px;
-} */
 
 /* === About === */
+
+#about {
+    margin-top: 40px;
+}
+
+.about__inner {
+    display:flex;
+    justify-content: space-between;
+}
+
+.about__photo {
+    border: 1px solid #000;
+    width: 40%;
+}
+
+.about__content {
+    border: 1px solid rgb(255, 0, 0);
+    width: 60%;
+}
+
+.about__title {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.about__text {
+    font-size: 18px;
+}
+
+.tabs {
+    display: flex;
+    margin: 20px 0 40px 0;
+}
+
+.tab__link {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab__link::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #c76000;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: .1s width linear;
+}
+
+.tab__link.active-link::after {
+    width: 100%;
+}
+
+.tab__content {
+    margin-top: 20px;
+    display: none;
+}
+
+.tab__content.active-tab {
+    display:block;
+
+}
+
+.tab__content__title {
+    margin: 20px 0 10px 0;
+    font-size: 16px;
+}
+
+.tab__content__list {
+    list-style: none;
+    margin-left: 10px;
+}
+
+.tab__content__item {
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.tab__content__item span {
+    display: block;
+    color:#6d3501;
+    margin-bottom: 5px;
+}
+/* Experience */
+
+.tab__content__suptitle {
+
+}
+
+.tab__content__item-text {
+
+}
