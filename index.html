@@ -19,7 +19,9 @@
                    <li class="nav__links-item"> <a  href="#about">About me</a></li>
                    <li class="nav__links-item">  <a  href="#portfolio">Portfolio</a></li>
                    <li class="nav__links-item">  <a  href="#contact">Contact</a></li>
+                   <i class="fa-solid fa-times" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
         </div>
     </header>
@@ -230,10 +232,10 @@
 
                 </div>
                 <div class="contact__form">
-                    <form class="form">
-                        <input type="text" name="ame" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <form class="form" action="https://formspree.io/f/xrgdvpjw" method="POST">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                         <button class="btn form__btn" type="submit">Submit</button>
                     </form>
 
@@ -249,7 +251,7 @@
 
 
 
-
+<!-- About Tabs -->
 <script>
 
     let tablinks = document.querySelectorAll('.tab__link');
@@ -268,5 +270,26 @@
     
 </script>
 
+<!-- Menu -->
+<script>
+    let sidemenu = document.querySelector('.nav__links');
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<!-- FOrm reset -->
+<script>
+window.onbeforeunload = () => {
+  for(const form of document.getElementsByTagName('form')) {
+    form.reset();
+  }
+}
+</script>
 </body>
 </html>
