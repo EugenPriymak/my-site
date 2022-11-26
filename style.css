@@ -201,7 +201,7 @@ body {
 }
 
 .about__text {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .tabs {
@@ -240,6 +240,9 @@ body {
 
 }
 
+.tab__content__suptitle {
+    font-size: 16px;
+}
 .tab__content.active-tab {
     display:block;
 
@@ -380,7 +383,7 @@ body {
 
 .form__btn {
     margin-top: 20px;
-    max-width: 150px;
+    max-width: 100px;
     cursor: pointer;
 }
 
@@ -391,7 +394,7 @@ body {
     background: #c760000e;
     padding: 15px;
     margin: 15px 0;
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 6px;
     
 }
@@ -470,6 +473,10 @@ body {
     .nav {
         margin-top: 10px;
     }
+
+    .nav__logo {
+        width: 100px;
+    }
     .nav .fa-solid {
         display: block;
         font-size: 25px;
@@ -477,17 +484,27 @@ body {
 
     }
 
+    .fa-solid.fa-bars {
+        position: fixed;
+        top: 13px;
+        right: 20px;
+        z-index: 2;
+        color:#c76000;
+
+    }
+    
     .nav__links {
         color: #fff;
         background: #c76000;
         position: fixed;
         top: 0;
         right: -200px;
-        width: 200px;
+        width: 150px;
         height: 100vh;
         padding-top: 50px;
         z-index: 3;
         transition: right linear .2s;
+        border-left: 1px white solid;
     }
 
     .nav__links i {
@@ -504,6 +521,7 @@ body {
     
     .nav__links-item a {
         color: #fff;
+        font-size: 16px;
     }
     .portfolio__item {
         width: 100%;
@@ -554,7 +572,7 @@ body {
         font-size: 25px;
     }
     
-    .btn, .form input, .form textarea, .about__text, .tab__link, .tab__content__title, .tab__content__item, .contact__inner a, .portfolio__item__title, .portfolio__item__text {
+    .btn, .form input, .form textarea, .about__text, .tab__link, .tab__content__title, .tab__content__item, .contact__inner a, .portfolio__item__title, .portfolio__item__text, .tab__content__suptitle {
         font-size: 15px;
     }
     .social__link i {
@@ -597,13 +615,13 @@ body {
         font-size: 20px;
     }
     
-    .btn, .form input, .form textarea, .about__text, .tab__link, .tab__content__title, .tab__content__item, .contact__inner a, .portfolio__item__title, .portfolio__item__text, footer p{
+    .btn, .form input, .form textarea, .about__text, .tab__link, .tab__content__title, .tab__content__item, .contact__inner a, .portfolio__item__title, .portfolio__item__text, footer p, .tab__content__suptitle {
         font-size: 13px;
     }
 }
 
 @media (max-width: 360px) {
-    .btn, .form input, .form textarea, .about__text, .tab__link, .tab__content__title, .tab__content__item, .contact__inner a, .portfolio__item__title, .portfolio__item__text{
+    .btn, .form input, .form textarea, .about__text, .tab__link, .tab__content__title, .tab__content__item, .contact__inner a, .portfolio__item__title, .portfolio__item__text, .tab__content__suptitle {
         font-size: 12px;
     }
     .tab__link {
