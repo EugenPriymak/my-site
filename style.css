@@ -150,7 +150,7 @@ body {
     background-color: #c76000;
     padding: 10px 20px;
     border: 0;
-    border-radius: 10px;
+    border-radius: 8px;
     text-decoration: none;
     font-weight: 600;
     transition: background-color .1s linear;
@@ -187,7 +187,16 @@ body {
 
 .about__photo {
     /* border: 1px solid #000; */
-    width: 40%;
+    width: 37%;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 510px;
+}
+
+.about__img {
+    width: 100%;
+    border-radius: 10px;
+    
 }
 
 .about__content {
@@ -300,7 +309,12 @@ body {
     margin-bottom: 20px;
     position: relative;
     overflow: hidden;
+}
 
+.portfolio__item__text { 
+    margin-top: 10px;
+    padding: 0 30px;
+    text-align: center;
 
 }
 
@@ -382,8 +396,10 @@ body {
 }
 
 .form__btn {
+    padding-left: 20px;
+    padding-right: 20px;
     margin-top: 20px;
-    max-width: 100px;
+    max-width: 120px;
     cursor: pointer;
 }
 
@@ -435,6 +451,9 @@ body {
         flex-direction: column;
     }
 
+    .about__photo {
+        display: none;
+    }
     .about__content {
         width: 100%;
     }
@@ -499,7 +518,7 @@ body {
         position: fixed;
         top: 0;
         right: -200px;
-        width: 150px;
+        width: 200px;
         height: 100vh;
         padding-top: 50px;
         z-index: 3;
